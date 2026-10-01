@@ -1,0 +1,151 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-shape {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.cta-squiggle-white,
+.cta-cone-white,
+.cta-cone-lime,
+.cta-cylinder-white,
+.cta-spring-lime-right {
+  display: none;
+}
+
+.cta-spring-lime-left {
+  left: 0;
+  top: 0;
+  width: 110px;
+}
+
+.cta-ring-lime {
+  left: 10px;
+  bottom: 0;
+  width: 130px;
+}
+
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 16px;
+}
+
+
+.cta-content h2 {
+  max-width: 710px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--soft);
+}
+
+.cta-content p {
+  max-width: 964px;
+  margin: 24px auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--soft);
+}
+
+.cta-content .btn {
+  margin-top: 32px;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .cta-content h2 { font-size: 44px; }
+}
+
+
+.cta-desktop {
+  padding: 0;
+}
+
+.cta-desktop .cta-stage {
+  position: absolute;
+  top: 0;
+  width: 1440px;
+  height: 488px;
+  transform-origin: top left;
+}
+
+.cta-desktop .cta-shape {
+  display: block;
+}
+
+
+.cta-desktop .cta-spring-lime-left {
+  left: 0;
+  top: 0;
+  width: 266px;
+}
+
+.cta-desktop .cta-squiggle-white {
+  left: 178px;
+  top: 5px;
+  width: 177px;
+}
+
+.cta-desktop .cta-cone-white {
+  left: 0;
+  top: 225px;
+  width: 140px;
+}
+
+.cta-desktop .cta-ring-lime {
+  left: 60px;
+  top: 350px;
+  bottom: auto;
+  width: 260px;
+}
+
+.cta-desktop .cta-cone-lime {
+  left: 1078px;
+  top: 0;
+  width: 190px;
+}
+
+.cta-desktop .cta-cylinder-white {
+  left: 1222px;
+  top: 6px;
+  width: 218px;
+}
+
+.cta-desktop .cta-spring-lime-right {
+  left: 1107px;
+  top: 289px;
+  width: 334px;
+}
+
+
+.cta-desktop .cta-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+}
+
+.cta-desktop .cta-content h2 {
+  font-size: 44px;
+  letter-spacing: -0.44px;
+}
+
+.cta-desktop .cta-content p,
+.cta-desktop .cta-content .btn {
+  margin: 0;
+}
