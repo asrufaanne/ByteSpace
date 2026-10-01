@@ -1,0 +1,269 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-shape {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.hero-spring-lime,
+.hero-squiggle-white,
+.hero-cylinder-lime,
+.hero-cone-white,
+.hero-spring-white {
+  display: none;
+}
+
+.hero-ring-white {
+  left: -30px;
+  bottom: -40px;
+  width: 170px;
+  z-index: 11;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.hero-content > p {
+  max-width: 860px;
+  margin: 24px auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--light);
+}
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 595px;
+  margin: 40px auto 0;
+}
+
+.hero-search label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  height: 52px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  background: var(--white);
+}
+
+.hero-search input {
+  flex: 1;
+  min-width: 0;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+.hero-search input::placeholder {
+  color: var(--body);
+}
+
+.hero-search .btn {
+  flex-shrink: 0;
+}
+
+.hero-visual {
+  position: relative;
+  z-index: 10;
+  height: 340px;
+  margin-top: 48px;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 150%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--lime-bright);
+  transform: translateX(-50%);
+}
+
+.hero-student {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 480px;
+  max-width: none;
+  transform: translateX(-42%);
+}
+
+.hero-uiux,
+.hero-progress,
+.hero-happy {
+  position: absolute;
+  display: none;
+}
+
+.hero-uiux {
+  padding: 16px;
+}
+
+.hero-uiux p:last-child {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--body);
+}
+
+@media (min-width: 640px) {
+  .hero-content h1 { font-size: 52px; }
+  .hero-visual { height: 440px; }
+  .hero-circle { width: 110%; }
+  .hero-student { width: 620px; }
+}
+
+
+.hero-desktop .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-desktop .hero-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1043px;
+  transform-origin: top left;
+}
+
+.hero-desktop .hero-content {
+  padding-top: 169px;
+}
+
+.hero-desktop .hero-content h1 {
+  max-width: 935px;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: -0.72px;
+}
+
+.hero-desktop .hero-content > p {
+  margin-top: 32px;
+  max-width: none;
+}
+
+.hero-desktop .hero-search {
+  justify-content: center;
+  max-width: none;
+  margin-top: 60px;
+}
+
+.hero-desktop .hero-search label {
+  flex: none;
+  width: 461px;
+}
+
+/* shapes */
+.hero-desktop .hero-spring-lime,
+.hero-desktop .hero-squiggle-white,
+.hero-desktop .hero-cylinder-lime,
+.hero-desktop .hero-cone-white,
+.hero-desktop .hero-spring-white {
+  display: block;
+}
+
+.hero-desktop .hero-spring-lime {
+  left: 0;
+  top: 233px;
+  width: 267px;
+}
+
+.hero-desktop .hero-squiggle-white {
+  left: 177px;
+  top: 489px;
+  width: 181px;
+}
+
+.hero-desktop .hero-ring-white {
+  left: 6px;
+  top: 697px;
+  bottom: auto;
+  width: 346px;
+}
+
+.hero-desktop .hero-cylinder-lime {
+  right: 0;
+  top: 232px;
+  width: 213px;
+}
+
+.hero-desktop .hero-cone-white {
+  right: 142px;
+  top: 477px;
+  width: 194px;
+}
+
+.hero-desktop .hero-spring-white {
+  right: -8px;
+  top: 688px;
+  width: 323px;
+}
+
+
+.hero-desktop .hero-visual {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  margin: 0;
+}
+
+.hero-desktop .hero-circle {
+  top: 582px;
+  width: 1149px;
+}
+
+.hero-desktop .hero-student {
+  top: 524px;
+  bottom: auto;
+  left: calc(50% - 311px);
+  width: 722px;
+  transform: none;
+}
+
+.hero-desktop .hero-uiux,
+.hero-desktop .hero-progress,
+.hero-desktop .hero-happy {
+  display: block;
+}
+
+.hero-desktop .hero-uiux {
+  left: 404px;
+  top: 639px;
+  white-space: nowrap;
+}
+
+.hero-desktop .hero-progress {
+  left: 842px;
+  top: 651px;
+}
+
+.hero-desktop .hero-happy {
+  left: 328px;
+  top: 837px;
+}

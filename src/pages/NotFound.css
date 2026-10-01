@@ -1,0 +1,83 @@
+.nf-hero {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80px;
+  color: var(--white);
+}
+
+.nf-content {
+  position: relative;
+  text-align: center;
+}
+
+.nf-code {
+  font-family: var(--font-display);
+  font-size: 160px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  background: linear-gradient(
+    180deg,
+    rgb(212, 251, 32) 0%,
+    rgba(212, 251, 32, 0.96) 25%,
+    rgba(212, 251, 32, 0.81) 50.5%,
+    rgba(212, 251, 32, 0.61) 68%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nf-content h1 {
+  max-width: 935px;
+  margin: -24px auto 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.nf-text {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--light);
+}
+
+.nf-btn {
+  margin-top: 24px;
+}
+
+@media (min-width: 640px) {
+  .nf-code { font-size: 260px; }
+  .nf-content h1 { margin-top: -48px; font-size: 48px; }
+}
+
+@media (min-width: 1024px) {
+  .nf-hero {
+    height: 957px;
+    padding-bottom: 0;
+  }
+
+  .nf-content {
+    padding-top: 40px; 
+  }
+
+  .nf-code {
+    font-size: 480px;
+    letter-spacing: -4.8px;
+  }
+
+  .nf-content h1 {
+    margin-top: -119px;
+    font-size: 72px;
+    letter-spacing: -0.72px;
+  }
+
+  .nf-text,
+  .nf-btn {
+    margin-top: 32px;
+  }
+}

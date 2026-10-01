@@ -1,0 +1,64 @@
+.paths {
+  padding-bottom: 120px;
+}
+
+.paths-title {
+  max-width: 917px;
+}
+
+.paths-title h2 {
+  font-size: 30px;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.path-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.path-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.path-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .paths-title h2 { font-size: 36px; }
+  .paths-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .paths-grid {
+    grid-template-columns: repeat(6, 167px);
+    justify-content: center;
+    gap: 40px;
+    margin-top: 68px;
+  }
+
+  .paths-title h2 {
+    white-space: nowrap;
+  }
+}

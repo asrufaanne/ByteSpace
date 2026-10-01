@@ -1,0 +1,164 @@
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  font-family: var(--font-logo);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.logo-text.light {
+  color: var(--soft);
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background-color 0.2s;
+}
+
+.btn-lime {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+.btn-lime:hover {
+  background: var(--lime-dark);
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.btn-blue:hover {
+  background: var(--blue-dark);
+}
+
+
+.avatar-stack {
+  display: flex;
+}
+
+.avatar-stack img,
+.avatar-stack span {
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-stack img:first-child {
+  margin-left: 0;
+}
+
+.avatar-stack span {
+  display: grid;
+  place-items: center;
+  background: var(--lime);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+
+.avatar-stack.big img,
+.avatar-stack.big span {
+  width: 43px;
+  height: 43px;
+  margin-left: -16px;
+}
+
+.avatar-stack.big img:first-child {
+  margin-left: 0;
+}
+
+.avatar-stack.big span {
+  font-weight: 700;
+}
+
+
+.float-card {
+  background: var(--white);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.float-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.happy-card {
+  width: 258px;
+  padding: 16px;
+}
+
+.happy-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 2px 0 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--body);
+}
+
+.happy-rating b {
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.progress-card {
+  padding: 16px;
+}
+
+.progress-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.progress-value {
+  margin-top: 8px;
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.48px;
+  color: var(--ink);
+}
+
+.progress-bar {
+  width: 200px;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 24px;
+  background: #f6f6f6;
+}
+
+.progress-bar div {
+  width: 112px;
+  height: 100%;
+  border-radius: 24px;
+  background: var(--lime);
+}
